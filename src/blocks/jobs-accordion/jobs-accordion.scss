@@ -1,0 +1,215 @@
+//------------------------------------------------------------------
+//Functionality:
+
+.jobs-accordion-container{
+  .jobs-accordion-wrapper{
+    .accordion-container{
+      .columns{
+        .column-1{
+          img{}
+        }
+        .column-2{
+          .title{
+            p{}
+          }
+          .description-bold-container{
+            display: none;
+            .bold_description{}
+          }
+          .description-container{
+            display: none;
+            .description{}
+          }
+          .link{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion-active{
+  .columns{
+    .column-1{
+      img{}
+    }
+    .column-2{
+      .title{
+        p{}
+      }
+      .description-bold-container{
+        display: block !important;
+        .bold_description{}
+      }
+      .description-container{
+        display: block !important;
+        .description{}
+      }
+      .link{
+        display: block !important;
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------------
+//Default Styling:
+
+.jobs-accordion-container{
+  border-bottom: 1px solid #707070;
+
+  @media(max-width: 1200px){
+    // padding: 0 40px;
+  }
+
+  .jobs-accordion-wrapper{
+    .accordion-container{
+      border-top: 1px solid #707070;
+      // border-bottom: 1px solid #707070;
+      padding: 10px 10px;
+
+      &:hover{
+      cursor: pointer;
+      }
+
+      .columns{
+        display: flex;
+        //-------------------------------------
+        // IF YOU WANT TO MOVE THE BUTTON TO THE RIGHT SIDE UNCOMMENT THESE LINES
+        // flex-direction: row-reverse;
+        // justify-content: space-between;
+        //-------------------------------------
+        .column-1{
+          margin: 0;
+          margin-right: 30px;
+          margin-left: 10px;
+          img{
+            margin-top: 10px;
+          }
+        }
+
+        .column-2{
+          margin: 0;
+          .title{
+            p{
+              font-size: 22px;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+          }
+          .description-bold-container{
+            .bold_description{
+              font-weight: 400;
+              margin: 10px 0;
+            }
+          }
+          .description-container{
+            .description{
+              margin: 10px 0;
+            }
+          }
+          .link{
+            margin-bottom: 13px;
+            p{
+              a{}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------------
+//Animations:
+
+.jobs-accordion-container{
+  .jobs-accordion-wrapper{
+    .accordion-container{
+      .columns{
+        .column-1{
+          img{
+            transition: 0.5s;
+          }
+        }
+        .column-2{
+          .title{
+            p{}
+          }
+          .description-bold-container{
+            .bold_description{}
+          }
+          .description-container{
+            .description{
+            }
+          }
+          .link{
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion-active{
+  // border-top: 1px solid #AFCA0B !important;
+  transition: 0.5s;
+
+  .columns{
+    .column-1{
+      img{
+        transform: rotate(180deg);
+        transition: 0.5s;
+      }
+    }
+    .column-2{
+      .title{
+        p{}
+      }
+      .description-bold-container{
+        .bold_description{
+          animation-name: description-animation;
+          animation-duration: 0.5s;
+
+          @keyframes description-animation {
+            0%   {color: transparent;}
+            100% {color: #454C53;}
+          }
+        }
+      }
+      .description-container{
+        .description{
+          animation-name: description-animation;
+          animation-duration: 0.5s;
+
+          @keyframes description-animation {
+            0%   {color: transparent;}
+            100% {color: #454C53;}
+          }
+        }
+      }
+      .link{
+        p{
+          
+          a{  
+            animation-name: link-animation;
+            animation-duration: 0.5s;
+            @keyframes link-animation {
+              0%   {color: transparent;}
+              100% {color: #AFCA0B;}
+            }
+          }
+          a::before{  
+            animation-name: before-link-animation;
+            animation-duration: 0.5s;
+            @keyframes before-link-animation {
+              0%   {opacity: 0;}
+              100% {opacity: 1;}
+            }
+          }
+        }
+      }
+    }
+  }
+}

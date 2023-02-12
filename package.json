@@ -1,0 +1,25 @@
+{
+  "name": "guten_config_plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wp-scripts start --hot",
+    "build": "wp-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanroloff/gutenberg_config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanroloff/gutenberg_config/issues"
+  },
+  "homepage": "https://github.com/stephanroloff/gutenberg_config#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^23.1.0"
+  }
+}

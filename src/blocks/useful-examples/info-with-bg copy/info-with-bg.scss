@@ -1,0 +1,62 @@
+.main-container,
+.is-root-container .wp-block{
+
+    [data-type="city-concepts/info-with-bg"]{
+        width: 740px;
+    }
+
+    .wp-block-city-concepts-info-with-bg,
+    .info-with-bg-container > * > .block-editor-block-list__layout{
+        display: flex;
+        align-items: stretch;
+        width: 740px;
+
+        @media(max-width: 1200px){
+            width: 100%;
+        }
+
+        .img-container{
+            margin: 0;
+            display: flex;
+            align-items: flex-end;
+            max-width: 60px;
+
+            figure{
+                max-width: 60px;
+                margin-right: 10px;
+            }
+        }
+
+        .green-line{
+            margin: 0;
+            background-color: #AFCA28;
+            width: 20px;
+        }
+        
+        .info-container{
+            position: relative;
+            left: -7px;
+            margin: 0;
+            margin-top: 5px;
+            max-width: 660px;
+            font-size: 22px !important;
+
+            @media(max-width: 1200px){
+                width: 100%;
+            }
+
+            p{
+                width: auto;
+
+                a{
+                    @media(max-width: 800px){
+                        position: relative;
+                        left: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

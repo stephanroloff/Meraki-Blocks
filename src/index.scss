@@ -1,0 +1,29 @@
+//Styles in Editor and Frontend (Defined in index.php)
+
+//Basics
+@import "./blocks/static/static.scss";
+@import "./blocks/dynamic/dynamic.scss";
+
+//accordion
+@import "./blocks/accordion-static/accordion-static.scss";
+
+//Card
+@import "./blocks/card-block/card-block.scss";
+
+//Feed
+@import "./blocks/projekte-feed/projekte-feed.scss";
+
+//Multi Layer
+@import "./blocks/multi-layer-block/multi-layer-block.scss";
+
+//Single Layer
+@import "./blocks/layer-block/layer-block.scss";
+
+//Carousel
+@import "./blocks/carousel-block/carousel-block.scss";
+
+//Masonry
+// @import "./blocks/masonry-feed/masonry-feed.scss";
+
+
+// @import "./blocks/jobs-accordion/jobs-accordion.scss";
